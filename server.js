@@ -51,7 +51,7 @@ app.use(session({
 
 app.use("/static", express.static(static_path));
 app.use(express.json());
-app.use(urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParse());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
