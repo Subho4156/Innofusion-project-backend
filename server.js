@@ -24,7 +24,7 @@ const store = new mongodbStore({
 })
 
 app.use(cors({
-    origin: '*',
+    origin: "https://innofusion-project-frontend.vercel.app",
     credentials: true
 }))
 
